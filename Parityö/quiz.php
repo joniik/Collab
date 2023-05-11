@@ -24,6 +24,10 @@
 			$c1 = $_POST['c1'];
 			$c2 = $_POST['c2'];
 			$c3 = $_POST['c3'];
+			$q3 = $_POST['q4'];
+			$c1 = $_POST['d1'];
+			$c2 = $_POST['d2'];
+			$c3 = $_POST['d3'];
 		
 			// Create a string containing the user's name and answers
 			$data = "Name: $q1: $a1\n$q2: $b2\n$q3: $c3\n\n";
@@ -60,6 +64,16 @@
 		<br>
 		<input type="radio" id="c3" name="q3_answer" value="<?php echo $c3; ?>">
 		<label for="c3"><?php echo $c3; ?></label>
+		<br><br>
+		<h2><?php echo $q4; ?></h2>
+		<input type="radio" id="d1" name="q4_answer" value="<?php echo $d1; ?>">
+		<label for="d1"><?php echo $d1; ?></label>
+		<br>
+		<input type="radio" id="c2" name="q3_answer" value="<?php echo $d2; ?>">
+		<label for="d2"><?php echo $d2; ?></label>
+		<br>
+		<input type="radio" id="c3" name="q3_answer" value="<?php echo $d3; ?>">
+		<label for="d3"><?php echo $d3; ?></label>
 		<br><br>
 		<input type="submit" value="Submit">
 	</form>
