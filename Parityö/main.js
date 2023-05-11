@@ -1,17 +1,13 @@
-const questionForm = document.querySelector('#questionForm');
-
-questionForm.addEventListener('submit', (event) => {
-	event.preventDefault();
-
-	const formData = new FormData(questionForm);
-
-	fetch('answers.php', {
-		method: 'POST',
-		body: formData
-	})
-	.then(response => response.text())
-	.then(data => {
-		document.write(data);
-	})
-	.catch(error => console.error(error));
-});
+function validateForm() {
+	var q1_answer = document.forms["quizForm"]["q1_answer"].value;
+	var q2_answer = document.forms["quizForm"]["q2_answer"].value;
+	var q3_answer = document.forms["quizForm"]["q3_answer"].value;
+	
+	if (q1_answer == "" || q2_answer == "" || q3_answer == "") {
+	  alert("Please answer all the questions.");
+	  return false;
+	}
+	
+	return true;
+  }
+  
