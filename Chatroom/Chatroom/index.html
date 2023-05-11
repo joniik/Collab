@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Outfit:wght@200&display=swap');
+	</style>
+
+	<link rel="stylesheet" href="style.css">
+	<title>Simple Chat Room</title>
+	<script type="text/javascript" src="chat.js"></script>
+	
+</head>
+<body>
+
+	<div class="dark">
+		<div class="Chatroom">
+			<h1 class="Header" style="font-family: Josefin Sans;">Simple Chat Room</h1>
+		</div>
+	</div>
+	
+	<div class="input-master">
+		<div class="Inputs">
+			<input type="text" id="username" placeholder="Enter your name...">
+		</div>
+	</div>
+
+	<div class="messagefield">
+		<input type="text" id="message" placeholder="Type your message here...">
+
+		<div class="Chatbox">
+			<div id="chat-box">
+
+			</div>
+
+			<div class="button">
+				<button onclick="sendMessage()" class="btn-se" id="btn-se">Send</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

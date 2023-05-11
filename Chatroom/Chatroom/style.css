@@ -1,0 +1,66 @@
+body{
+    background-color: #4f4f4f;
+    margin: 0%;
+}
+.Inputs-master{
+    align-content: center;
+    margin: auto;
+}
+
+.Inputs{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messagefield{
+    margin-top: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#message{
+    width: 50rem;
+    height: 2rem;
+    border-width: 2px;
+    border-color: lightgray;
+    background-color: #363636;
+    border-style: solid;
+    border-radius: 0.5rem;
+}
+
+#username{
+    width: 15rem;
+    height: 1.5rem;
+    border-width: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    background-color: #363636;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+#btn-se{
+    width: 5rem;
+    height: 2.25rem;
+    border-width: 2px;
+    border-color: rgb(152, 255, 164);
+    border-style: solid;
+    background-color:  rgb(64, 255, 86);
+    border-radius: 0.5rem;
+}
+
+.dark{
+    background-color: #363636;
+    padding: 1rem;
+    
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0%;
+    
+}
