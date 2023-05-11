@@ -24,10 +24,10 @@
 			$c1 = $_POST['c1'];
 			$c2 = $_POST['c2'];
 			$c3 = $_POST['c3'];
-			$q3 = $_POST['q4'];
-			$c1 = $_POST['d1'];
-			$c2 = $_POST['d2'];
-			$c3 = $_POST['d3'];
+			$q4 = $_POST['q4'];
+			$d1 = $_POST['d1'];
+			$d2 = $_POST['d2'];
+			$d3 = $_POST['d3'];
 		
 			// Create a string containing the user's name and answers
 			$data = "Name: $q1: $a1\n$q2: $b2\n$q3: $c3\n\n";
