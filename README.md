@@ -11,7 +11,7 @@ Projekti Suunnitelma.
 4) Tehdä toimija alusta työntekijöille saada vastaukset kysymyksiin ja keskustella avoimesti chatin kautta.
 
 
-Anssi Kujala
+Anssi Kujala, 
 Joni Ikävalko
 
 2023
