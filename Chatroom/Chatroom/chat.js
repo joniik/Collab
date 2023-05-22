@@ -1,10 +1,17 @@
-const socket = new WebSocket('ws://localhost:8080');
+const socket = new WebSocket('wss://https://datanomit.fi/TVT2022/jonika/:8080');
 
 function sendMessage() {
   const username = document.getElementById('username').value;
   const message = document.getElementById('message').value;
   socket.send(username + ': ' + message);
   document.getElementById('message').value = '';
+}
+
+function handleKeyPress(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault(); // Prevents the default behavior of the Enter key
+    sendMessage();
+  }
 }
 
 socket.onmessage = (event) => {
@@ -23,3 +30,6 @@ socket.onmessage = (event) => {
     });
   }
 };
+
+document.getElementById('message').addEventListener('keydown', handleKeyPress);
+document.getElementById('btn-se').addEventListener('click', sendMessage);
