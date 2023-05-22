@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+
 <html>
-<meta charset="UTF-8">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parityo</title>
 	<link rel="stylesheet" href="style.css">
-	<title>Parityö</title>
 </head>
 <body>
 	<h1>Parityö</h1>
-	<form method="POST" action="quiz.php">
+	<form method="post" action="answers.php">
 		<label for="q1">Question 1:</label>
 		<input type="text" id="q1" name="q1" required>
 		<label for="a1">Answer 1:</label>
@@ -35,16 +37,9 @@
 		<label for="c3">Answer 3:</label>
 		<input type="text" id="c3" name="c3" required>
 		<br><br>
-		<label for="q4">Question 4:</label>
-		<input type="text" id="q4" name="q4" required>
-		<label for="d1">Answer 1:</label>
-		<input type="text" id="d1" name="d1" required>
-		<label for="d2">Answer 2:</label>
-		<input type="text" id="d2" name="d2" required>
-		<label for="d3">Answer 3:</label>
-		<input type="text" id="d3" name="d3" required>
-		<br><br>
-		<input type="submit" value="Luo kysely">
+		<input type="submit" value="Create Question Form">
 	</form>
+
+	<script src="main.js"></script>
 </body>
 </html>
